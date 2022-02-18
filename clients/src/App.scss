@@ -1,0 +1,19 @@
+@mixin flexprop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.front {
+  min-height: 100vh;
+
+  flex-wrap: wrap;
+  .buton{
+    width: 18rem;
+    background-color: rgb(118, 134, 118);
+    min-height: 80px;
+    border: 2px solid rgb(126, 69, 97);
+    margin: 1rem;
+  }
+  @include flexprop();
+}
